@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Drive</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar" id="home">
+    <div class="logo-section">
+        <img src="images/logo.png" alt="Fortune Drive Logo">
+        <h2>Fortune Drive</h2>
+    </div>
+
+    <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="#cars">All Cars</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="terms.html">Terms</a></li>
+    
+    <li class="dashboard-menu">
+        <a href="#" id="dashboardToggle">
+            <span class="dashboard-icon">⚙</span>
+        </a>
+
+        <div class="dashboard-dropdown" id="dashboardDropdown">
+            <p id="themeToggle">🌙 Dark / Light Mode</p>
+            <p id="helpToggle">🛠 Help & Support</p>
+            <p id="faqToggle">❓ FAQs</p>
+            <p onclick="window.location.href='terms.html'">📄 Terms & Conditions</p>
+            <p onclick="window.location.href='privacy.html'">🔒 Privacy Policy</p>
+        </div>
+    </li>
+</ul>
+</nav>
+<section class="hero-slider">
+    <div class="slides">
+        <img src="images/banner1.jpg" class="slide active">
+        <img src="images/banner2.jpg" class="slide">
+        <img src="images/banner3.jpg" class="slide">
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</section>
+
+<section class="booking-section">
+
+    <h2 class="booking-title">Book Your Car</h2>
+
+    <div class="booking-tabs">
+        <button class="tab active">Daily Drives</button>
+        <button class="tab">Subscription</button>
+    </div>
+
+   <div class="booking-box">
+
+    <div id="dailyContent">
+        <h3>Looking for the best car rentals?</h3>
+        <p>Book Self-Drive Car Rentals Across Odisha</p>
+
+        <div class="booking-form">
+
+           <select id="destination">
+                <option selected disabled>Select Destination</option>
+                <option>Bhubaneswar</option>
+                <option>Cuttack</option>
+                <option>Puri</option>
+                <option value="Angul">Angul</option>
+<option value="Balangir">Balangir</option>
+<option value="Balasore">Balasore</option>
+<option value="Bargarh">Bargarh</option>
+<option value="Bhadrak">Bhadrak</option>
+<option value="Boudh">Boudh</option>
+<option value="Cuttack">Cuttack</option>
+<option value="Deogarh">Deogarh</option>
+<option value="Dhenkanal">Dhenkanal</option>
+<option value="Gajapati">Gajapati</option>
+<option value="Ganjam">Ganjam</option>
+<option value="Jagatsinghpur">Jagatsinghpur</option>
+<option value="Jajpur">Jajpur</option>
+<option value="Jharsuguda">Jharsuguda</option>
+<option value="Kalahandi">Kalahandi</option>
+<option value="Kandhamal">Kandhamal</option>
+<option value="Kendrapara">Kendrapara</option>
+<option value="Keonjhar">Keonjhar</option>
+<option value="Khordha">Khordha</option>
+<option value="Koraput">Koraput</option>
+<option value="Malkangiri">Malkangiri</option>
+<option value="Mayurbhanj">Mayurbhanj</option>
+<option value="Nabarangpur">Nabarangpur</option>
+<option value="Nayagarh">Nayagarh</option>
+<option value="Nuapada">Nuapada</option>
+<option value="Puri">Puri</option>
+<option value="Rayagada">Rayagada</option>
+<option value="Sambalpur">Sambalpur</option>
+<option value="Subarnapur">Subarnapur</option>
+<option value="Sundargarh">Sundargarh</option>
+            </select>
+
+            <div class="time-box">
+                <label>Trip Start</label>
+                <input type="datetime-local" id="tripStart">
+            </div>
+
+            <div class="time-box">
+                <label>Trip End</label>
+                <input type="datetime-local" id="tripEnd">
+            </div>
+
+           <button type="button" id="bookingBtn">BOOK NOW</button>
+
+        </div>
+    </div>
+
+
+    <div class="subscription-message" id="subscriptionMessage">
+        🚗 THANK YOU FOR CHOOSING OUR SUBSCRIPTION PLAN! <br><br>
+        Enjoy Premium Discounts, Priority Booking & Support. <br><br>
+        Contact us to avail this benefits. <br><br>
+        <a href="tel:+918114763522">📞 +91 8114763522</a>
+    </div>
+
+</div>
+   </div>
+
+    </div>
+
+</section>
+<section class="cars-section" id="cars">
+
+    <h2 class="cars-title">All Cars</h2>
+
+    <div class="cars-grid">
+
+        <!-- Repeat 8 Cards -->
+        <div class="car-card">
+            <img src="images/car1.png" alt="Car">
+            <div class="car-info">
+                <span class="view-details">View Details</span>
+                <a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a>
+            </div>
+
+            <div class="details-box">
+                <p>Model: Scorpio S11</p>
+                <p>Fuel: Disele</p>
+                <p>12 Hrs: ₹2799</p>
+                <p>24 Hrs: ₹3799</p>
+            </div>
+        </div>
+
+        <div class="car-card"><img src="images/car2.png"><div class="car-info"><span class="view-details">View Details</span><a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a></div><div class="details-box"><p>Model: XUV700</p><p>Fuel: Diesel</p><p>12 Hrs: ₹2999</p><p>24 Hrs: ₹3999</p></div></div>
+
+        <div class="car-card"><img src="images/car3.png"><div class="car-info"><span class="view-details">View Details</span><a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a></div><div class="details-box"><p>Model: Mahindra Thar</p><p>Fuel: Diesel</p><p>12 Hrs: ₹2499</p><p>24 Hrs: ₹3299</p></div></div>
+
+        <div class="car-card"><img src="images/car4.png"><div class="car-info"><span class="view-details">View Details</span><a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a></div><div class="details-box"><p>Model: KIA Sonet</p><p>Fuel: petrol</p><p>12 Hrs: ₹1799</p><p>24 Hrs: ₹2299</p></div></div>
+
+        <div class="car-card"><img src="images/car5.png"><div class="car-info"><span class="view-details">View Details</span><a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a></div><div class="details-box"><p>Model: Toyota Glaza</p><p>Fuel: Petrol</p><p>12 Hrs: ₹1499</p><p>24 Hrs: ₹1799</p></div></div>
+
+        <div class="car-card"><img src="images/car6.png"><div class="car-info"><span class="view-details">View Details</span><a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a></div><div class="details-box"><p>Model: Suzuki Fronx</p><p>Fuel: petrol</p><p>12 Hrs: ₹1499</p><p>24 Hrs: ₹1799</p></div></div>
+
+        <div class="car-card"><img src="images/car7.png"><div class="car-info"><span class="view-details">View Details</span><a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a></div><div class="details-box"><p>Model: Suzuki Swift</p><p>Fuel: petrol</p><p>12 Hrs: ₹1299</p><p>24 Hrs: ₹1599</p></div></div>
+
+        <div class="car-card"><img src="images/car8.png"><div class="car-info"><span class="view-details">View Details</span><a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+    <button type="button">BOOK NOW</button>
+</a></div><div class="details-box"><p>Model: Toyota taisor</p><p>Fuel: petrol</p><p>12 Hrs: ₹1499</p><p>24 Hrs: ₹1799</p></div></div>
+
+    </div>
+
+</section>
+<section class="gallery-section" id="gallery">
+
+    <h2 class="gallery-title">Our Gallery</h2>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <img src="images/gallery1.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/gallery2.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/gallery3.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/gallery4.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/gallery5.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/gallery6.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+    <section class="why-section" id="about">
+
+    <h2 class="why-title">Why Choose Us</h2>
+    <p class="why-tagline">
+        Affordable, Comfortable and Professional Car Rental Service You Can Trust.
+    </p>
+
+    <div class="why-container">
+
+        <div class="why-left">
+
+            <div class="why-box active" data-content="easy">
+                Easy Booking
+            </div>
+
+            <div class="why-box" data-content="price">
+                Competitive Price
+            </div>
+
+            <div class="why-box" data-content="clean">
+                Clean & Comfortable Cars
+            </div>
+
+            <div class="why-box" data-content="support">
+                24/7 Customer Support
+            </div>
+
+        </div>
+
+
+        <div class="why-right">
+
+            <div class="why-content active" id="easy">
+                <img src="images/easy-booking.png">
+                <p>
+                    Our booking process is quick and hassle-free. With just a few clicks,
+                    reserve your desired vehicle anytime and anywhere without complicated steps.
+                </p>
+            </div>
+
+            <div class="why-content" id="price">
+                <img src="images/competitive-price.png">
+                <p>
+                    We offer the most competitive and affordable rental pricing across Odisha
+                    without compromising on service quality and customer satisfaction.
+                </p>
+            </div>
+
+            <div class="why-content" id="clean">
+                <img src="images/clean-cars.png">
+                <p>
+                    All our vehicles are regularly sanitized, well-maintained, and designed
+                    to provide maximum comfort for your journey.
+                </p>
+            </div>
+
+            <div class="why-content" id="support">
+                <img src="images/support.png">
+                <p>
+                    Our team is available 24/7 to assist you with booking help, emergency
+                    support, and any issue during your ride.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer" id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+           <h2 class="footer-logo-text">
+    <img src="images/logo.png" alt="Logo">
+    Fortune Drive
+</h2>
+            <p>
+                "Fortune Drive is a trusted self-drive car rental service in Bhubaneswar. We provide clean, well-maintained cars at affordable prices for dates, long drives, trips, family outings, and daily travel. Easy booking, flexible timings, transparent pricing, and customer satisfaction are our top priorities.
+            </p>
+            <h4>Self Drive Car Rental In Bhubaneswar</h4>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+<li><a href="about.html">About Us</a></li>
+<li><a href="#cars">All Cars</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+
+            <p>
+    <a href="https://maps.app.goo.gl/MrXqVZKTTbJJG4s6A" target="_blank">
+        📍 Nuagaon Square, Near Sum Hospital, Gothapatana Road, Bhubaneswar 751029
+    </a>
+</p>
+<p>
+            <a href="tel:+918114763522">📞 +91 8114763522</a>
+            </p>
+            <p>
+
+            <a href="mailto:fortunedrive84@gmail.com?subject=Fortune Drive Inquiry">
+    ✉ fortunedrive84@gmail.com
+</a>
+</p>
+
+           <div class="social-icons">
+
+    <a href="https://facebook.com/Fortune Drive - Self Drive Car Rental" target="_blank">
+        <img src="images/facebook.png" alt="Facebook">
+    </a>
+
+    <a href="https://instagram.com/fortune__drive_carrental_bbsr
+" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+    </a>
+
+    <a href="https://api.whatsapp.com/send?phone=918114763522&text=Hi%20Fortune%20Drive,%20I%20want%20to%20rent%20a%20car" target="_blank">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+</div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Fortune Drive. All Rights Reserved.
+    </div>
+
+</footer>
+<script src="script.js"></script>
+<div class="help-popup" id="helpPopup">
+
+    <div class="help-box">
+
+        <span id="closeHelp">✖</span>
+
+        <h2>Help & Support</h2>
+
+        <p>
+            <a href="tel:+918114763522">📞 +91 8114763522</a>
+            </p>
+            <p>
+
+            <a href="mailto:fortunedrive84@gmail.com?subject=Fortune Drive Inquiry">
+    ✉ fortunedrive84@gmail.com
+</a>
+</p>
+
+        <p>🕒 Support Available 24/7</p>
+
+    </div>
+
+</div>
+<div class="faq-popup" id="faqPopup">
+
+    <div class="faq-box">
+
+        <span id="closeFaq">✖</span>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h4>How to Book a Car?</h4>
+            <p>Choose your desired vehicle, select trip timing and click Book Now.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>What documents are required?</h4>
+            <p>Driving License, Aadhaar/Voter ID/Passport, College/Company ID.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Is fuel included in rental price?</h4>
+            <p>No, fuel and toOl charges are not included in rental fare.</p>
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
