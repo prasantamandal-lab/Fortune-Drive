@@ -836,3 +836,76 @@ html{
 .footer-box a:hover{
     color:#00e5ff;
 }
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo-section img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    /* HERO SLIDER */
+    .hero-slider img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* BOOKING SECTION */
+    .booking-form{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .booking-form select,
+    .booking-form input,
+    .booking-form button{
+        width: 100%;
+    }
+
+    /* CAR SECTION */
+    .cars-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* GALLERY */
+    .gallery-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* WHY CHOOSE US */
+    .why-container{
+        flex-direction: column;
+    }
+
+    .why-left, .why-right{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    /* ABOUT PAGE */
+    .about-company{
+        flex-direction: column;
+    }
+
+}
