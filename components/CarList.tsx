@@ -78,11 +78,11 @@ export default function CarList() {
 
               <div className="flex items-center justify-between">
 
-                <button className="text-cyan-400 font-semibold hover:text-white transition">
+                <button className="text-cyan-400 font-semibold hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] hover:text-white transition">
                   View Details
                 </button>
 
-                <button className="bg-gradient-to-r from-cyan-400 to-purple-500 px-5 py-3 rounded-xl text-white font-bold hover:scale-105 transition">
+                <button className="bg-gradient-to-r from-cyan-400 to-purple-500 hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] px-5 py-3 rounded-xl text-white font-bold hover:scale-105 transition">
                   BOOK NOW
                 </button>
 

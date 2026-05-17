@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                className={`w-full text-left px-8 py-6 rounded-3xl font-semibold text-2xl transition-all duration-300
+                className={`w-full text-left px-8 py-6 rounded-3xl hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] font-semibold text-2xl transition-all duration-300
                   
                   ${
                     active === index
