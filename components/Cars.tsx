@@ -4,11 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Cars() {
- const [destination, setDestination] = useState("");
-const [selectedCar, setSelectedCar] = useState("");
-const [contactNumber, setContactNumber] = useState("");
-const [tripStart, setTripStart] = useState("");
-const [tripEnd, setTripEnd] = useState("");
+  const [destination, setDestination] = useState("");
+  const [selectedCar, setSelectedCar] = useState("");
+  const [contactNumber, setContactNumber] = useState("");
+  const [tripStart, setTripStart] = useState("");
+  const [tripEnd, setTripEnd] = useState("");
   const handleBooking = () => {
   const phoneNumber = "918114763522";
 
@@ -59,7 +59,7 @@ const [tripEnd, setTripEnd] = useState("");
               type="text"
               placeholder="Enter destination"
               value={destination}
-onChange={(e) => setDestination(e.target.value)}
+              onChange={(e) => setDestination(e.target.value)}
               className="w-full px-5 py-4 rounded-xl bg-white text-black outline-none"
             />
           </div>
@@ -94,7 +94,7 @@ onChange={(e) => setDestination(e.target.value)}
               type="number"
               placeholder="Enter number"
               value={contactNumber}
-onChange={(e) => setContactNumber(e.target.value)}
+              onChange={(e) => setContactNumber(e.target.value)}
               className="w-full px-5 py-4 rounded-xl bg-white text-black outline-none"
             />
           </div>
@@ -108,7 +108,7 @@ onChange={(e) => setContactNumber(e.target.value)}
             <input
               type="datetime-local"
               value={tripStart}
-onChange={(e) => setTripStart(e.target.value)}
+              onChange={(e) => setTripStart(e.target.value)}
               className="w-full px-5 py-4 rounded-xl bg-white text-black outline-none"
             />
           </div>
@@ -122,7 +122,7 @@ onChange={(e) => setTripStart(e.target.value)}
             <input
               type="datetime-local"
               value={tripEnd}
-onChange={(e) => setTripEnd(e.target.value)}
+              onChange={(e) => setTripEnd(e.target.value)}
               className="w-full px-5 py-4 rounded-xl bg-white text-black outline-none"
             />
           </div>

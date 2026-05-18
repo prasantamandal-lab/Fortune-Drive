@@ -6,7 +6,6 @@ import Gallery from "@/components/Gallery";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
-import WhatsappButton from "@/components/WhatsappButton";
 import ScrollProgress from "@/components/ScrollProgress";
 
 export default function Home() {
@@ -28,8 +27,6 @@ export default function Home() {
       <Testimonials />
 
       <Footer />
-
-      <WhatsappButton />
 
       <ScrollProgress />
 

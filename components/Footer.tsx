@@ -6,9 +6,19 @@ export default function Footer() {
 
         {/* Logo & About */}
         <div>
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text text-transparent">
-            Fortune Drive
-          </h2>
+          <div className="flex items-center gap-4 mb-6">
+
+  <img
+    src="/logo.png"
+    alt="Fortune Drive"
+    className="w-14 h-14 rounded-full object-cover"
+  />
+
+  <h2 className="text-4xl font-bold text-cyan-400">
+    Fortune Drive
+  </h2>
+
+</div>
 
           <p className="text-gray-300 text-lg leading-9">
             Premium self-drive car rental service in Bhubaneswar and across Odisha.
@@ -23,21 +33,35 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-5 text-lg text-gray-300">
-            <li className="hover:text-cyan-400 cursor-pointer transition">
-              Home
-            </li>
+           <li>
+  <a href="/" className="hover:text-cyan-400 transition">
+    Home
+  </a>
+</li>
 
-            <li className="hover:text-cyan-400 cursor-pointer transition">
-              Cars
-            </li>
+<li>
+  <a href="/#allcars" className="hover:text-cyan-400 transition">
+    Cars
+  </a>
+</li>
 
-            <li className="hover:text-cyan-400 cursor-pointer transition">
-              Gallery
-            </li>
+<li>
+  <a href="/#gallery" className="hover:text-cyan-400 transition">
+    Gallery
+  </a>
+</li>
 
-            <li className="hover:text-cyan-400 cursor-pointer transition">
-              Contact
-            </li>
+<li>
+  <a href="/about" className="hover:text-cyan-400 transition">
+    About Us
+  </a>
+</li>
+
+<li>
+  <a href="/terms" className="hover:text-cyan-400 transition">
+    Terms & Conditions
+  </a>
+</li>
           </ul>
         </div>
 
@@ -50,15 +74,18 @@ export default function Footer() {
           <div className="space-y-5 text-lg text-gray-300">
 
             <p>
-              📍 Bhubaneswar, Odisha
+              📍 Nuagaon Square, Near Sum Hospital, Gothapatana Road, Bhubaneswar 751029
             </p>
 
-            <p>
-              📞 +91 9876543210
-            </p>
+            <a
+  href="tel:+918114763522"
+  className="hover:text-cyan-400 transition"
+>
+  📞 +91 8114763522
+</a>
 
             <p>
-              📧 support@fortunedrive.site
+              📧 fortunedrive84@gmail.com
             </p>
 
             <p>
@@ -69,6 +96,48 @@ export default function Footer() {
         </div>
 
       </div>
+
+      <div className="flex gap-6 mt-6">
+
+  {/* Instagram */}
+  <a
+    href="https://instagram.com/fortune__drive_carrental_bbsr"
+    target="_blank"
+  >
+    <img
+      src="/social/instagram.png"
+      alt="Instagram"
+      className="w-12 h-12 hover:scale-110 transition duration-300"
+    />
+  </a>
+
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/918114763522"
+    target="_blank"
+  >
+    <img
+      src="/social/whatsapp.png"
+      alt="WhatsApp"
+      className="w-12 h-12 hover:scale-110 transition duration-300"
+    />
+  </a>
+
+  {/* Facebook */}
+  <a
+  href="https://facebook.com/fortunedrivecarrental"
+  target="_blank"
+>
+  <img
+    src="/social/facebook.png"
+    alt="Facebook"
+    className="w-12 h-12 hover:scale-110 transition duration-300"
+  />
+</a>
+
+</div>
+
+
 
       {/* Bottom */}
       <div className="border-t border-gray-700 mt-16 pt-8 text-center text-gray-400 text-lg">
